@@ -157,7 +157,68 @@ const whisper = str => {
     : str;
 };
 
-console.log(whisper("PLEASE STOP SHOUTING."));
-console.log(whisper("MA'AM, this is a Wendy's!"));
-console.log(whisper("The KITTENS are SLEEPING!"));
-console.log(whisper("Wow!"));
+// console.log(whisper("PLEASE STOP SHOUTING."));
+// console.log(whisper("MA'AM, this is a Wendy's!"));
+// console.log(whisper("The KITTENS are SLEEPING!"));
+// console.log(whisper("Wow!"));
+
+//Day 5:
+
+/*
+   It's the day after Halloween 🎃 and all the candy is on sale!
+   
+   To buy up all the candy, use map() and filter() to put all the
+   candy into a `shoppingCart` array. 
+   
+   The new array should contain only the item and the price, like
+   this: 
+   
+   Expected output: 
+   [
+       {item: "🍭", price: 2.99},
+       {item: "🍫", price: 1.99}, 
+       {item: "🍬", price: 0.89}
+    ]
+
+    example data:[
+    {
+        item: "🍭",
+        price: 2.99,
+        type: "sweet",
+    },
+    {
+        item: "🍫",
+        price: 1.99, 
+        type: "sweet",
+    },
+    {
+        item: "🥫",
+        price: 1.99, 
+        type: "savory",
+    },
+    {
+        item: "🍬",
+        price: .89, 
+        type: "sweet",
+    },
+    {
+        item: "🥦",
+        price: 3.99,
+        type: "savory",
+    }, 
+    {
+        item: "🍖",
+        price: 3.99, 
+        type: "savory",
+    }, 
+]
+*/
+
+function getSaleItems(data) {
+  const allCandy = data.filter(
+    ({ item }) => item === "🍫" || item === "🍬" || item === "🍭"
+  );
+  return allCandy.map(({ item, price }) => ({ item, price }));
+}
+
+console.log(getSaleItems(products));
