@@ -270,3 +270,69 @@ function altCaps(str) {
 }
 
 // console.log(altCaps("When you visit Portland you have to go to VooDoo Donuts"));
+
+// Day 8
+
+function validTime(str) {
+  const time = str.split(":");
+  if (+time[0] < 0 || +time[0] > 24) return false;
+  if (+time[1] < 0 || +time[1] > 59) return false;
+  return true;
+}
+
+/**
+ * Jasmine tests
+ */
+// describe('validTime()', () => {
+//   it('returns true for valid time', () => {
+//       // arrange
+//       const str = '13:58';
+
+//       // act
+//       const result = validTime(str);
+
+//       // log
+//       console.log("result 1: ", result);
+
+//       // assert
+//       expect(result).toBe(true);
+//   });
+
+//   it('new test', () => {
+//       const str = "-24:00";
+
+//       const result = validTime(str);
+
+//       console.log("result 2: ", result)
+
+//       expect(result).toBe(false);
+//   })
+
+//   it('returns false when invalid hours', () => {
+//       // arrange
+//       const str = '25:51';
+
+//       // act
+//       const result = validTime(str);
+
+//       // log
+//       console.log("result 1: ", result);
+
+//       // assert
+//       expect(result).toBe(false);
+//   });
+
+//   it('returns false when invalid minutes', () => {
+//       // arrange
+//       const str = '02:76';
+
+//       // act
+//       const result = validTime(str);
+
+//       // log
+//       console.log("result 1: ", result);
+
+//       // assert
+//       expect(result).toBe(false);
+//   });
+// });
