@@ -534,3 +534,14 @@ function emojifyPhrase(phrase) {
 
 // console.log(emojifyPhrase("I :heart: my :cat:"));
 // console.log(emojifyPhrase("I :heart: my :elephant:"));
+
+// Day 14
+
+function countVowelConsonant(str) {
+  return str.split("").reduce((ttl, curr) => {
+    if (curr.match(/[aeiou]/)) {
+      ttl += 1;
+    } else ttl += 2;
+    return ttl;
+  }, 0);
+}
