@@ -545,3 +545,10 @@ function countVowelConsonant(str) {
     return ttl;
   }, 0);
 }
+
+// Day 15
+
+function isPalindrome(str) {
+  const checkWord = str.toLowerCase().split("").reverse().join("");
+  return checkWord === str ? true : false;
+}
