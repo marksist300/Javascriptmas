@@ -643,5 +643,59 @@ const flatten = arr => {
   return result;
 };
 
-console.log(flatten(kittyPrizes));
-console.log(flatten(kittyScores));
+// console.log(flatten(kittyPrizes));
+// console.log(flatten(kittyScores));
+
+// Day 18
+
+function candies(children, candy) {
+  return Math.floor(candy / children) * children;
+}
+
+/**
+ * Test Suite
+ */
+// describe('candies()', () => {
+//   it('returns ammount of total equal candy to be eaten', () => {
+//       // arrange
+//       const children = 3;
+//       const candy = 10;
+
+//       // act
+//       const result = candies(children, candy);
+
+//       // log
+//       console.log("result: ", result);
+
+//       // assert
+//       expect(result).toBe(9);
+//   });
+//   it('returns ammount of total equal candy to be eaten', () => {
+//       // arrange
+//       const children = 4;
+//       const candy = 10;
+
+//       // act
+//       const result = candies(children, candy);
+
+//       // log
+//       console.log("result: ", result);
+
+//       // assert
+//       expect(result).toBe(8);
+//   });
+//   it('returns ammount of total equal candy to be eaten', () => {
+//       // arrange
+//       const children = 5;
+//       const candy = 15;
+
+//       // act
+//       const result = candies(children, candy);
+
+//       // log
+//       console.log("result: ", result);
+
+//       // assert
+//       expect(result).toBe(15);
+//   });
+// });
